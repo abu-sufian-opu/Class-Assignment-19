@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container-div{
+    width: 1024px;
+    margin: 20px auto;
+}
+.menu-div{
+    background-color: #ffffff;
+    text-align: center;
+}
+.menu-div ul{
+    list-style: none;
+}
+.menu-div ul li{
+    display: inline-block;
+    margin-left: -5px;
+
+}
+.menu-div ul li a{
+    display: inline-block;
+    background-color: #48dbfb;
+    color: black;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+.menu-div ul li a:hover{
+    background-color: #fff;
+    color: #48dbfb;
+}
+.menu-div ul li a::before {
+	content: "";
+	height: 2px;
+	width: 0;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	left: 10px;
+	bottom: 5px;
+	z-index: -1;
+	transition: .5s;
+}
+.menu-div ul li a:hover::before{
+    width: 75%;
+}
+
+.banner-div{
+    text-align: center;
+    background-color: #48dbfb;
+    color: white;
+    margin-top: 10px;
+    padding: 50px 0px;
+}
+.banner-div h1{
+    margin: 15px 0px 0px;
+}
+.button-div{
+    margin: 10px 10px;
+}
+.button-div a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.button-div a::before{
+    content: "\f544";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
+.button-div a::after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.button-div a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+
+.content-div{
+    background-color: #ddd;
+    padding: 50px 20px 0px;
+    text-align: center;
+}
+.content-div h2{
+    margin-bottom: 15px;
+}
+.content-div .step-div{
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+.content-div .step-div .step1{
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    margin-left: 100px;
+    transform: rotate(-38deg);
+    transition: .5s;
+}
+.content-div .step-div .step1:hover{
+    transform: rotate(0);
+    background-color: #48dbfb;
+    color: black;
+}
+.content-div .step-div .step2{
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    margin-left: 100px;
+    transform: scale(1);
+    transition: .5s;
+}
+.content-div .step-div .step2:hover{
+    transform: scale(1.5);
+    background-color: #48dbfb;
+    color: black;
+}
+
+.content-div .step-div .step3{
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    margin-left: 100px;
+    transform: rotate(38deg);
+    transition: .5s;
+}
+.content-div .step-div .step3:hover{
+    transform: rotate(0);
+    background-color: #48dbfb;
+    color: black;
+}
+
+
+.footer{
+    background-color: #2e2f31;
+    text-align: center;
+    color: #ddd;
+    padding: 20px;
+}
+
+
+
